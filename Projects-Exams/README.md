@@ -1,5 +1,5 @@
-#Projects and Exams
+# Projects and Exams
 
-##Binary Black Holes 
+## Binary Black Holes 
 
 The directory contains 
