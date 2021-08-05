@@ -1,0 +1,202 @@
+OpenMP  # of threads=  8
+
+random seed is   3229  2707  1879  3251
+&INPUT
+ FN_INT="usdb.snt                                                                                                                                                                                                                                                        ",
+ FN_PTN="Ne20_usdb_p.ptn                                                                                                                                                                                                                                                 ",
+ FN_PTN_INIT="NO_INIT                                                                                                                                                                                                                                                         ",
+ MTOT=8          ,
+ HW_TYPE=2          ,
+ N_EIGEN=1          ,
+ N_RESTART_VEC=10         ,
+ MAX_LANC_VEC=200        ,
+ MAXITER=300        ,
+ IS_DOUBLE_J=T,
+ FN_SAVE_WAVE="Ne20_usdb_j8p.wav                                                                                                                                                                                                                                               ",
+ FN_LOAD_WAVE="NO_INIT                                                                                                                                                                                                                                                         ",
+ IS_LOAD_SNAPSHOT=F,
+ BETA_CM=  0.0000000000000000     ,
+ EFF_CHARGE=  1.5000000000000000     , 0.50000000000000000     ,
+ GL=  1.0000000000000000     ,  0.0000000000000000     ,
+ GS=  3.9100000000000001     , -2.6779999999999999     ,
+ E1_CHARGE= 2*0.0000000000000000       ,
+ OP_TYPE_INIT="NO_INIT                                                                                                                                                                                                                                                         ",
+ MASS=0          ,
+ MODE_LV_HDD=0          ,
+ IS_CALC_TBME=F,
+ TOL=  9.9999999999999995E-007,
+ NEIG_LOAD_WAVE=1          ,
+ SS_E_RANGE= 2*-100000000.00000000      ,
+ N_BLOCK=0          ,
+ NV_SHIFT=1          ,
+ NPROCS_REDUCE=1          ,
+ TT_PROJ=-1         ,
+ ADD_RANDINIT=  0.0000000000000000     ,
+ ORBS_RATIO= 36*0          ,
+ /
+compile conf. kwf, kdim, kmbit =  8  8  8
+
+ proton  core  8, orbit: 0s_1/2 0p_3/2 0p_1/2
+ neutron core  8, orbit: 0s_1/2 0p_3/2 0p_1/2
+
+ model space
+   k,  n,  l,  j, tz,  p, 2n+l
+   1   0   2   3  -1   1   2   p 0d_3/2
+   2   0   2   5  -1   1   2   p 0d_5/2
+   3   1   0   1  -1   1   2   p 1s_1/2
+   4   0   2   3   1   1   2   n 0d_3/2
+   5   0   2   5   1   1   2   n 0d_5/2
+   6   1   0   1   1   1   2   n 1s_1/2
+
+set partition Mtotal=  8  partition_file= Ne20_usdb_p.ptn
+Max 2*J =  16
+
+pn= 1   # of mbits=             40
+pn= 2   # of mbits=             40
+
+init_partition  time it took was:     0.003 sec
+
+Memory usage in partition        0.01 MB
+M =   8/2  :  parity = +
+
+N. of valence protons and neutrons =   2  2   mass= 20   n,z-core     8    8
+TBME mass dependence (mass/  18)^ -0.30000000
+ hbar_omega: set by 45A^(-1/3)-25A^(-2/3) MeV
+hbar_omega =   13.18512 MeV;     b =    1.77350 fm
+ partition distribution based on counted dim.           1
+ partition distribution based on counted dim.           1
+
+loadbalancing cost max/min         225.00000         225.00000
+
+ partition distribution algorithm time:   8.2699999893520726E-005
+ max proton  dim. / a partition                     4
+ max neutron dim. / a partition                     4
+
+total # of partitions                 79  = 10** 1.90
+total m-scheme dimension             225  = 10** 2.35
+ max. # dim. / a partition                    9
+ max local dim. / proc, average                  225                  225
+
+Memory for one global Lanczos vector:     0.000 GB
+Memory / process is:     0.000 GB x    203 =      0.000 GB
+Total Memory for Lanczos vectors:     0.000 GB
+
+
+max. working area for pn-int.:      0.001GB           2000
+maximum threshold dim. for working area     333
+split partition threshold dim.            333  nsplt_ptn 128
+ # of split partitions        0 /           79
+init_bp_operator time it took was:     0.000 sec
+
+ max/min # of connected ptns / proc        3817        3817
+
+init_bp_op allocated mem size    0.000014 GB
+
+
+ *** Lanczos start ***
+
+          JJ  lanczos     1    1      28.905779
+time / thread at rank 0    0     0.00013
+time / thread at rank 0    1     0.00014
+time / thread at rank 0    2     0.00095
+time / thread at rank 0    3     0.00014
+time / thread at rank 0    4     0.00014
+time / thread at rank 0    5     0.00013
+time / thread at rank 0    6     0.00014
+time / thread at rank 0    7     0.00014
+max time / a partition    0   0.00085
+ JJ   operate_time      0.001
+          JJ  lanczos     2    2      23.126946
+          JJ  lanczos     3    3      20.968298
+          JJ  lanczos     4    4      20.198944
+          JJ bn converged    5  0.21E-26
+time diag     0.000 sec
+time re-orth     0.000 sec
+          JJ bn converged    1  0.22E-27
+H  lanczos     1    1     -13.362999
+time / thread at rank 0    0     0.00049
+time / thread at rank 0    1     0.00049
+time / thread at rank 0    2     0.00049
+time / thread at rank 0    3     0.00048
+time / thread at rank 0    4     0.00048
+time / thread at rank 0    5     0.00049
+time / thread at rank 0    6     0.00049
+time / thread at rank 0    7     0.00048
+max time / a partition    0   0.00009
+ H    operate_time      0.001
+          JJ bn converged    1  0.28E-27
+H  lanczos     2    2     -21.273972
+          JJ bn converged    1  0.40E-27
+H  lanczos     3    3     -26.180087
+          JJ bn converged    1  0.33E-27
+H  lanczos     4    4     -30.263498
+          JJ bn converged    1  0.43E-27
+H  lanczos     5    5     -33.590545
+          JJ bn converged    1  0.84E-27
+H  lanczos     6    6     -35.503884
+          JJ bn converged    1  0.11E-26
+H  lanczos     7    7     -36.114445
+          JJ bn converged    1  0.15E-26
+H  lanczos     8    8     -36.263054
+          JJ bn converged    1  0.22E-26
+H  lanczos     9    9     -36.291814
+          JJ bn converged    1  0.44E-26
+H  lanczos    10   10     -36.296173
+          JJ bn converged    1  0.85E-26
+H  lanczos    11   11     -36.296866
+          JJ bn converged    1  0.98E-26
+H  lanczos    12   12     -36.297005
+          JJ bn converged    1  0.16E-25
+H  lanczos    13   13     -36.297051
+          JJ bn converged    1  0.38E-25
+H  lanczos    14   14     -36.297058
+          JJ bn converged    1  0.19E-24
+H converged  0.957921E-06
+time restart     0.000
+lanczos eigenvalues     1  -36.297059
+
+total time it took was:     0.023 sec.      0.000 hours
+
+
+    summary of time, total =     0:00:00
+
+                       time,    ncall, time/ncall,   ratio 
+          total       0.023         1     0.02264   1.0000
+    pre-process       0.007         1     0.00740   0.3269
+        operate       0.010        35     0.00029   0.4458
+     re-orthog.       0.001        35     0.00003   0.0507
+  thick-restart       0.001        17     0.00005   0.0350
+   diag tri-mat       0.000        35     0.00001   0.0140
+           misc       0.003                         0.1275
+
+
+
+ effective charges   1.500  0.500
+ gl,gs =   1.0000  0.0000  3.9100 -2.6780
+-------------------------------------------------
+   1  <H>:   -36.29706  <JJ>:    20.00000  J:  8/2  prty  1
+                        <TT>:     0.00000  T:  0/2
+ <p Nj>  0.291  1.412  0.297
+ <n Nj>  0.291  1.412  0.297
+   <Qp>    -9.878   <Qn>    -9.879   <eQ>   -19.757
+   <Lp>     1.931   <Ln>     1.932
+   <sp>     0.069   <sn>     0.068
+   <gm>     2.016   <Jz>     4.000
+-------------------------------------------------
+wave functions save in Ne20_usdb_j8p.wav # of wf    1
+time I/O      0.000 GB  /      0.005 sec. =      0.00 GB/s
+
+
+    summary of time, total =     0:00:00
+
+                       time,    ncall, time/ncall,   ratio 
+          total       0.030         2     0.01481   1.0000
+    pre-process       0.007         1     0.00740   0.2499
+        operate       0.010        38     0.00027   0.3474
+     re-orthog.       0.001        35     0.00003   0.0388
+  thick-restart       0.001        17     0.00005   0.0268
+   diag tri-mat       0.000        35     0.00001   0.0107
+           misc       0.010                         0.3265
+
+           tmp        0.005         2     0.00268   0.1811
+

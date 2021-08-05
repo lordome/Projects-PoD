@@ -1,0 +1,19 @@
+model {
+    # Likelihood:
+    for( i in 1 : N ) {
+	  alpha[i] <- alphaOfClust[ clust[i] ]
+	  beta[i] <- betaOfClust[ clust[i] ]
+
+      clust[i] ~ dcat( pClust[1:Nclust] )
+      y[i] ~ dbeta( alpha[i] , beta[i] )
+
+    }
+    # Prior:
+    
+    for ( clustIdx in 1: Nclust ) {
+      alphaOfClust[clustIdx] ~ dnorm( 0.0 , 1.0E-10 )
+	  betaOfClust[clustIdx] ~ dnorm( 0.0 , 1.0E-10 )
+    }
+    pClust[1:Nclust] ~ ddirch( onesRepNclust )
+		
+}
