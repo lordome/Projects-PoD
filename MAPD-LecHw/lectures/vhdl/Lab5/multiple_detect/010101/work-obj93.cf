@@ -1,7 +1,0 @@
-v 4
-file . "tesebench.vhd" "7807012abd18858dbabd7a62784e1465625fde9b" "20201202143923.284":
-  entity pattern_testbench at 1( 0) + 0 on 13;
-  architecture behav of pattern_testbench at 5( 94) + 0 on 14;
-file . "multiple_detect.vhd" "6fea89e8d92a90774211ff7b143a461778e61a78" "20201202143923.233":
-  entity patterndetect at 1( 0) + 0 on 11;
-  architecture rtl of patterndetect at 10( 212) + 0 on 12;
