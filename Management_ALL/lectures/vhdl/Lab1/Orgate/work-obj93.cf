@@ -1,0 +1,7 @@
+v 4
+file . "testbench.vhd" "bdabde4d63ff0b3df051f8c93618fc913206b17b" "20201118150501.905":
+  entity testbench at 1( 0) + 0 on 17;
+  architecture tb of testbench at 5( 78) + 0 on 18;
+file . "or_gate.vhd" "54aa8f8482fe545ffc7bef2bd4a8005d288f2344" "20201118150457.283":
+  entity or_gate at 2( 25) + 0 on 15;
+  architecture rtl of or_gate at 10( 190) + 0 on 16;
