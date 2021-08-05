@@ -1,7 +1,0 @@
-v 4
-file . "testbench.vhd" "f73e2856a1afcff0d8ba0dc85e506cb2fec7ca41" "20201118145132.991":
-  entity heartbeat_top at 1( 0) + 0 on 13;
-  architecture str of heartbeat_top at 5( 93) + 0 on 14;
-file . "heartbeat.vhd" "5328b5d78e781ee58a2ad6a640d255724cd1f480" "20201118145132.970":
-  entity heartbeat at 1( 0) + 0 on 11;
-  architecture behaviour of heartbeat at 6( 110) + 0 on 12;

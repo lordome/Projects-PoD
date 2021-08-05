@@ -1,7 +1,0 @@
-v 4
-file . "testbench.vhd" "e04d929e5bbdd194c15c5de8c892f28400afbdf6" "20201202140916.961":
-  entity testbench at 1( 0) + 0 on 23;
-  architecture behav of testbench at 5( 78) + 0 on 24;
-file . "my_fsm.vhd" "265055c4728a5b4c7186e4e22d65b40f1007f4fe" "20201202140842.821":
-  entity my_fsm1 at 1( 0) + 0 on 21;
-  architecture fsm1 of my_fsm1 at 10( 166) + 0 on 22;

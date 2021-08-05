@@ -1,7 +1,0 @@
-v 4
-file . "heartbeat.vhd" "5328b5d78e781ee58a2ad6a640d255724cd1f480" "20201118144057.536":
-  entity heartbeat at 1( 0) + 0 on 15;
-  architecture behaviour of heartbeat at 6( 110) + 0 on 16;
-file . "helloworld.vhd" "602504367ade6f8954a584bc555ea8ec028e282e" "20201118143250.653":
-  entity hello_world at 1( 0) + 0 on 13;
-  architecture behaviour of hello_world at 4( 59) + 0 on 14;

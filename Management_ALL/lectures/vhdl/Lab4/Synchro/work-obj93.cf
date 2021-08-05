@@ -1,7 +1,0 @@
-v 4
-file . "synchro.vhd" "f122c1642a12e3fb6215ce6af91187980e10a38b" "20201201213009.030":
-  entity sync at 1( 0) + 0 on 17;
-  architecture rtl of sync at 10( 190) + 0 on 18;
-file . "testbench.vhd" "a847389e2be793cc2b4c958a99128a14f16688bf" "20201201213009.054":
-  entity testbench at 1( 0) + 0 on 19;
-  architecture behav of testbench at 5( 78) + 0 on 20;

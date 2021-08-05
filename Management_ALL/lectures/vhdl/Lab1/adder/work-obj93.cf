@@ -1,7 +1,0 @@
-v 4
-file . "testbench.vhd" "fce2c5236ce14f05e0e61efefe46c45e86e4c3ba" "20201118151107.482":
-  entity adder_tb at 1( 0) + 0 on 13;
-  architecture test of adder_tb at 5( 83) + 0 on 14;
-file . "adder.vhd" "87861bfcc8a30c9c8f6ab2b2af657e5eb583f86f" "20201118151107.446":
-  entity adder at 1( 0) + 0 on 11;
-  architecture rtl of adder at 12( 322) + 0 on 12;
