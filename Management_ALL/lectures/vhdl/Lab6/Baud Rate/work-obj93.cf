@@ -1,7 +1,0 @@
-v 4
-file . "testbench.vhd" "40a27a52e91cfb6d5c2c6fa57ee1f56508a6c0d2" "20201209143521.453":
-  entity baud_testbench at 1( 0) + 0 on 13;
-  architecture behav of baud_testbench at 5( 88) + 0 on 14;
-file . "baudrate.vhd" "cb5caf96f59c6e26bcb42d2cbae96020a6f686b0" "20201209143521.340":
-  entity baud at 1( 0) + 0 on 11;
-  architecture rtl of baud at 10( 169) + 0 on 12;
